@@ -1,3 +1,6 @@
+#pytest maxfail.py -v --maxfail 2
+# Execution is stopped after N failures
+
 import pytest
 import math
 
@@ -12,7 +15,6 @@ def test_square_failure():
 def test_equality_failure():
    assert 10 == 11
 
-#pytest maxfail.py -v --maxfail 2
-# Execution is stopped after N failures
+
 
 
